@@ -1,6 +1,7 @@
 let lenis;
 
 const text = document.querySelector('.hero-text');
+const headerImg = document.querySelector('.header-img');
 
 const init = () => {
 
@@ -10,7 +11,8 @@ const init = () => {
   });
 
   lenis.on('scroll', ({ scroll }) => {
-    text.style.transform = `translate3D(${-scroll}px, 0, 0)`;
+    text.style.transform = `translate3D(${(-scroll*5)}px, 0, 0)`;
+    headerImg.style.transform = `translate3D(0, ${(-scroll*4)}px, 0)`;
   });
 
   function raf(time) {
