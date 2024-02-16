@@ -116,7 +116,7 @@ a {
     width: 96vw;
     margin: 1%;
     border-color: #9ba8ab;
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
     border-radius: 11px;
     position: fixed;
@@ -154,8 +154,9 @@ a {
     background-color: black;
     border-style: solid;
     border-color: #9c5dcfc5;
-    border-radius: 9px;
-    border-width: 4px;
+    border-radius: 8px;
+    border-width: 2px;
+    margin: 2px
 }
 
 #nav-logo > .navbar-item > h1 {
