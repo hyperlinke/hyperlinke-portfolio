@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #06141b;
+    font-family: 'DM Sans', sans-serif;
+    color: #ccd0cf;
+}
+
+.container {
+    margin: 0 10px 0 10px;
+}
+
+#app {
+    /* font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #f5a700; */
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #06141b;
+    transition: opacity 2s, visibility 2s;
+}
+ .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 2px solid #dddddd;
+    border-top-color: #4a5cba;
+    border-radius: 50%;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes loading {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}
+
+/* ==BEGIN-FONTS== */
+
+h1 {
+    margin: 0;
+}
+
+.accent-font {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+/* ==END-FONTS== */
+
+/* ==BEGIN-LENIS== */
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+/* ==END-LENIS== */
+
+/* ==BEGIN-LINKS== */
+
+a {
+    text-decoration: none;
+    color: #d3c29e;
+}
+
+/* ==END-LINKS== */
+
+/* ==BEGIN-NAVBAR== */
+.navbar-container {
+    display: flex;
+    height: 64px;
+    width: 100%;
+    margin: 0 0 30px 0;
+    border-color: #9ba8ab;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    background-color: #00000060;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-container a {
+    font-weight: bold;
+    color: #273745;
+}
+
+.navbar-container a.router-link-exact-active {
+    color: #ccd0cf;
+
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.navbar-item > h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+#nav-logo {
+    flex-direction: column;
+    width: 60px;
+    background-color: black;
+    border-style: solid;
+    border-color: #273745;
+    border-radius: 5px;
+}
+
+#nav-logo > .navbar-item > h1 {
+    margin: 0;
+}
+
+#nav-logo > #nk {
+    margin-bottom: -6px;
+}
+
+/* ==END-NAVBAR== */
+
+/* ==BEGIN-HOMEPAGE== */
+.background-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .background-image {
+    width: 100%;
+    margin: -150px 0 0 0;
+    filter: blur(50px);
+  }
+  
+  .main-heading {
+    margin: 130px 0px 0px 100px;
+  }
+  
+  .main-heading > .small-heading {
+    font-size: 1.7rem;
+    margin: 0 0 -7px 65px;
+    color: #ccd0cf55;
+  }
+  
+  .main-heading > .big-heading {
+    font-size: 4rem;
+  }
+  
+  .header-text {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    margin-top: 10%;
+    color: rgba(66, 66, 66, 0.349);
+    margin-left: 180px;
+  }
+  
+  .header-text > h1 {
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .header-img {
+    height: 80%;
+    width: 300px;
+    margin-right: 180px;
+  }
+  
+  .header-img > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .floating-box {
+    /* width: 90%;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.052);
+    margin: 200px auto 0 auto;
+    border-radius: 100px;
+    box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.75);
+    overflow: hidden; */
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    display: inline-flex;
+    width :max-content;
+  }
+/* ==END-HOMEPAGE== */  
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-wrapper {
+    width: inherit;
+    height: inherit;
+}
+
+.hero-text {
+    position: fixed;
+    left: 0;
+    top: 300px;
+    display: inline-flex;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 60rem;
+}
