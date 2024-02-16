@@ -144,8 +144,14 @@ a {
 }
 
 .navbar-item > h1 {
-    font-size: 22px;
+    cursor: pointer;
+    font-size: 21px;
     margin: 0;
+    text-shadow: -2px 2px 0px rgba(182, 107, 243, 0.51);
+}
+
+.navbar-item > h1:hover {
+    text-shadow: none;
 }
 
 #nav-logo {
