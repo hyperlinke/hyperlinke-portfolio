@@ -252,10 +252,12 @@ a {
     border-radius: 4rem;
     box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.75);
     padding: 35px 35px 0 45px;
-    font-weight: 600;
+    font-weight: 500;
+    font-style: oblique;
     font-size: 1.4rem;
     z-index: 3;
     backdrop-filter: blur(6px);
+    line-height: 1;
 }
 
 /* ==END-HOMEPAGE== */  
@@ -285,10 +287,18 @@ a {
 .centered-box {
     height: 400px;
     width: 40vw;
-    margin: -100px 0 0 45%;
-    background-color:#06141b;
-    border-style: offset;
+    margin: -80px 0 0 45%;
+    padding: 2px 8px 8px 8px;
+    border-radius: 10px;
+    background-color:#6666662c;
+    border-style: ridge;
     border-color:#273745;
     border-width: 1px;
+    color:#c2c2c2e5;
     z-index: 2;
+    box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.75);
+}
+
+.centered-box > h1 {
+    color: rgb(242, 100, 255);
 }
