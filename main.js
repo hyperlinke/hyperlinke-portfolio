@@ -6,6 +6,8 @@ const headerImg = document.querySelector('.header-img');
 const floatingText = document.querySelector('.floating-box');
 const headerTwoText = document.querySelector('.header-two-text');
 // const secondHeroText = document.querySelector('.second-hero-text');
+const xpHeader = document.querySelector('.experience-header');
+
 
 const init = () => {
 
@@ -21,6 +23,8 @@ const init = () => {
     floatingText.style.cssText = `transform: translate3D(0, ${(-scroll/3)}px, 0); filter: blur(${(scroll/80)}px);`;
     headerTwoText.style.cssText = `transform: translate3D(${(scroll/6)}px,0 , 0);`;
     // secondHeroText.style.cssText = `transform: translate3D(${(scroll/6)}px,0 , 0);`;
+    xpHeader.style.cssText = `transform: translate3D(${(-scroll/6)}px,0 , 0);`;
+
   });
 
   function raf(time) {
