@@ -117,8 +117,9 @@ a {
 /* ==BEGIN-NAVBAR== */
 .navbar-container {
     display: flex;
+    justify-content: space-between;
     height: 64px;
-    width: 96vw;
+    width: 98%;
     margin: 1%;
     border-color: #9ba8ab;
     border-width: 1px;
@@ -129,6 +130,10 @@ a {
     background-color: #00000060;
     backdrop-filter: blur(10px);
     z-index: 999;
+}
+
+.navbar-container > audio {
+    margin: auto 4px;
 }
 
 .navbar-container a {
